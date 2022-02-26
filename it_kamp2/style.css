@@ -1,0 +1,16 @@
+.blokovi{
+    width:200px;
+    height:250px;
+    background-color:rgb(17, 17, 17);
+    margin:10;
+    display:inline-block;
+    border-radius: 15px;
+    border: 1px gray solid;
+    padding:20px;
+    
+}
+html{
+    background-color: black;
+    padding: 30px 100px;
+    color:white;
+}
