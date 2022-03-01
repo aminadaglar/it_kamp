@@ -1,0 +1,67 @@
+.sve{
+    width:400px;
+    height: 520px;
+    background-color: white;
+    margin:50px;
+    padding:20px;
+}
+.prvo{
+    color:gray;
+    margin:0;
+}
+h1{
+    margin:0;
+}
+.ispod_naslova{
+    display: inline-block;
+    margin:0;
+    margin-top: 20px;
+    padding: 10px;
+    width:110px;
+    color:gray;
+    font-size:larger;
+    border-bottom: solid 2px gray;
+}
+#plavi{
+    color:blue;
+    border-bottom: solid 2px blue;
+}
+.tekst{
+    color:dimgray;
+    font-size:19px;
+}
+.nzm{
+    border-top:1px solid lightgray;
+    font-size: larger;
+    padding:10px 0;
+}
+#donje{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+.levo{
+    color:gray;
+}
+.desno{
+    float:right;
+}
+.kraj{
+    font-size:smaller;
+}
+.srce{
+    float:right;
+    background-color: lightgray;
+    border-radius: 90px;
+    padding:10px 12px;
+    margin-left: 15px;
+}
+.button{
+    width:50px;
+    height:20px;
+    background-color: blue;
+    float:right;
+    font-size:large;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
