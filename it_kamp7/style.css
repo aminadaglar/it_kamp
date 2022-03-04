@@ -1,0 +1,37 @@
+body{
+    width:100vw;
+    height:100vh;
+    margin:0;
+}
+
+.levo{
+    float:left;
+    width:500px;
+    height:200px;
+    background-color: aqua;
+    padding:10px;
+}
+h1{
+    margin:0;
+}
+.desno{
+    float: right;
+    background-color: blue;
+    width:300px;
+    height:400px;
+}
+.blok{
+    display:inline-block;
+    width:32%;
+    height:50%;
+    background-color: gray;
+    vertical-align: top;
+}
+.blokcici{
+    display:inline-block;
+    width:15%;
+    height:70px;
+    background-color: black;
+    margin:2px;
+    margin-top: 10px;
+}
