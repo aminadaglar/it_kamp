@@ -1,0 +1,37 @@
+.slika{
+    width:1000px;
+    height:400px;
+    background-color: aqua;
+    position:relative;
+    top:100px;
+    left:100px;
+}
+.centar{
+    position:absolute;
+    top:48%;
+    left:46%;
+}
+.topright{
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+.topleft{
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+.bottomleft{
+    position:absolute;
+    bottom:5px;
+    left:5px;
+}
+.bottomright{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+span{
+    font-size: 20px;
+    font-weight: 600;
+}
