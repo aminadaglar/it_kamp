@@ -1,0 +1,220 @@
+body{
+    font-family:"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:64px;
+    background-color:#6366f1;
+    display:inline-block;
+    vertical-align: top;
+    
+}
+.bars{
+    position:absolute;
+    top: 21px;
+    left:18px;
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+
+}
+.dugme{
+    position: absolute;
+    top:16px;
+    right:16px;
+    background-color: hsla(0,0%,100%,.192);
+    border-radius: 30px;
+    width: 58px;
+    height: 32px;
+    display:inline-block;
+    vertical-align: top;
+    color:white;
+}
+.dugme .material-icons{
+    position:absolute;
+    top:7px;
+    left:7px;
+    font-size:18px;
+}
+.krug{
+    position:absolute;
+    right:6px;
+    top:6px;
+    width:20px;
+    height:20px;
+    background-color: #6366f1;
+    border-radius: 50%;
+}
+.ikonice{
+    position:relative;
+    float:right;
+    margin:6px;
+    right:86px;
+    top:10px;
+    text-align: right;
+    color: hsla(0,0%,100%,.300);
+    font-size: 22px;
+}
+#desktop{
+    color:white;
+}
+.deo_sa_bojama{
+    padding:0 10px;
+    position:relative;
+    top:16px;
+    float:right;
+    margin-right: 97px;
+    background-color: white;
+    width: 170px;
+    height: 32px;
+    border-radius: 20px;
+}
+.boje{
+    position:relative;
+    vertical-align: top;
+    margin-top:6px;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background-color: #6366f1;
+    border-radius: 50%;
+    text-align: center;
+}
+#tacno{
+    position:absolute;
+    color:white;
+    font-size: 13px;
+    top:4px;
+    right:4px;
+
+}
+.drugo_dugme{
+    width:130px;
+    height:18px;
+    border-radius: 20px;
+    border:solid 1px hsla(0,0%,100%,.300);
+    position:relative;
+    float:right;
+    top:16px;
+    right:16px;
+    text-align: center;
+    color:white;
+    font-size: 13px;
+    padding: 6px 0;
+    font-weight: 600;
+}
+.github{
+    position:fixed;
+    /* width:100px;
+    height:40px; */
+    right:20px;
+    bottom:20px;
+    color:white;
+    background-color: rgb(66, 66, 66);
+    padding:7px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+.github .fa-brands{
+    font-size:25px;
+    margin-right: 3px;
+}
+.github .tekst{
+    position:relative;
+    bottom:4px;
+}
+.tasteri{
+    position:fixed;
+    bottom:20px;
+    right:160px;
+    width:66px;
+    height:40px;
+    font-size: 0;
+}
+.taster{
+    width:20px;
+    height: 20px;
+    background-color: rgb(241, 241, 241);
+    display:inline-block;
+    margin:1px;
+    border-radius: 3px;
+    font-size: 13px;
+    text-align: center;
+    color:darkgray;
+}
+#gornji{
+    display:block;
+    margin:auto;
+}
+.container{
+    margin:160px 30px;
+}
+.naslov{
+    margin:auto;
+    width:850px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 70px;
+}
+h1{
+    font-weight: 500;
+}
+.naslov p{
+    font-size: 16px;
+    color:darkslategray;
+    font-weight: 400;
+}
+.blok{
+    display:inline-block;
+    width:47%;
+    height: 200px;
+    padding:16px;
+}
+.slika{
+    width:200px;
+    height:110px;
+    background-color: rgb(247, 247, 247);
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    font-size: 22px;
+    color:rgb(167, 167, 167);
+    text-align: center;
+    padding-top: 80px;
+    border-radius: 10px;
+    font-weight: 200;
+}
+.desno{
+    display:inline-block;
+    height:200px;
+    width:340px;
+}
+h2{
+    display:inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:5px;
+}
+h3{
+    font-size: 15px;
+    color:gray;
+    margin:0;
+    font-weight: 400;
+}
+.desno p{
+    color:darkslategray;
+}
+.desno span{
+    color:gray;
+    font-size: 18px;
+    margin-left:3px;
+}
+.desno .fa-brands{
+    margin-right: 3px;
+}
