@@ -1,0 +1,103 @@
+body{
+    background-color: black;
+    padding:100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blok{
+    position:relative;
+    width:250px;
+    height:330px;
+    background-color:rgb(17, 17, 17);
+    margin:10;
+    display:inline-block;
+    vertical-align: top;
+    border-radius: 15px;
+    border: 1px rgb(78, 78, 78) solid;
+    padding:20px;
+    margin:10px;
+}
+.blok:hover{
+    border:1px gray solid;
+    cursor:pointer;
+}
+
+.tri_tacke{
+    visibility:hidden;
+    border-radius: 10px;
+    width:22px;
+    height:22px;
+    padding:5px;
+    color:gray;
+    float:right;
+    font-size: 22px;
+    text-align: center;
+}
+.blok:hover .tri_tacke{
+    visibility:visible;
+
+}
+.tri_tacke:hover{
+    color:rgb(170, 170, 170);
+    background-color: rgb(40, 40, 40);
+}
+.slicica{
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+}
+h2{
+    color:white;
+    font-size: 20px;
+}
+.donji_deo{
+    height:40px;
+    position:absolute;
+    bottom:5px;
+    width:250px;
+    color:gray;
+    text-align: center;
+}
+.sa_tekstom{
+    display:inline-block;
+    width:60px;
+    text-align: left;
+    font-size:20px;
+    padding-top: 2px;
+    font-weight: 600;
+    margin-right:48px;
+}
+.desna{
+    float:right;
+}
+.ikonice{
+    display:inline-block;
+    vertical-align: top;
+    width:25px;
+    height:25px;
+    border-radius: 10px;
+    text-align: center;
+    padding:2px;
+}
+.sa_tekstom:hover{
+    color:rgb(0, 187, 100);
+}
+.sa_tekstom:hover .ikonice{
+    background-color: rgb(0, 53, 16);
+}
+.desna:hover{
+    background-color: rgb(128, 36, 2);
+    color:orangered;
+    border-radius: 10px;
+}
+.slika{
+    margin-left:-10px;
+    border-radius: 10px;
+    position:absolute;
+    bottom:55px;
+    width:270px;
+}
+.tekstic{
+    color:gray;
+    position:absolute;
+    bottom:190px;
+}
