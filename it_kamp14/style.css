@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    text-align: center;
+    padding-top: 300px;
+}
+.slovo{
+    font-family: 'Times New Roman', Times, serif;
+    color:goldenrod;
+    display:inline-block;
+    font-size: 50px;
+    animation-name: rotate;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+#a{
+    animation-delay: 0s;
+}
+#b{
+    animation-delay: 0.25s;
+}
+#c{
+    animation-delay: 0.5s;
+}
+#d{
+    animation-delay: 0.75s;
+}
+#e{
+    animation-delay: 1s;
+}
+#f{
+    animation-delay: 1.25s;
+}
+#g{
+    animation-delay: 1.5s;
+}
+#h{
+    animation-delay: 1.75s;
+}
+
+@keyframes rotate {
+    0% {transform: rotateY(360deg);}
+    20%{transform:rotateY(0deg);}
+}
