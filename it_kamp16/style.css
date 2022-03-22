@@ -46,6 +46,7 @@ body{
     animation-name: pomeranje;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 
 }
 
