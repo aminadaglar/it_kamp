@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    width:100%;
+    height:auto;
+    background-color: black;
+    color:white;
+    display:flex;
+}
+.link{
+    width:100px;
+    height:50px;
+    text-align: center;
+    display:grid;
+    align-content: center;
+}
+.link:hover{
+    background-color: pink;
+}
+@media screen and (max-width: 480px) {
+    .link {
+      width:100%;
+    }
+    .header{
+        display:block;
+    }
+}
