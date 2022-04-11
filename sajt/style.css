@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    font-family: "Jost",sans-serif;
+}
+.desno{
+    float:right;
+}
+
+.header1{
+    padding:11px 100px;
+    border-bottom: 1px solid #edeff2;
+    color: #292621;
+}
+.header1 .dugme{
+    display:inline-block;
+    padding:0 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.header1 .desno{
+    padding-right: 35px;
+    display:inline-block;
+}
+.fa-brands{
+    cursor: pointer;
+    font-size: 14px;
+    display:inline-block;
+    color:dimgrey;
+    transition:0.5s;
+}
+.ikonica{
+    width:27px;
+    display:inline-block;
+    height:18px;
+    text-align: right;
+}
+.ikonica:hover .fa-brands{
+    transform:rotateY(180deg);
+    color:#FF2020;
+}
+.ikonice{
+    display:inline-block;
+}
+.desno .dugme{
+    border-right:1px solid #edeff2;
+}
+.header2{
+    display:inline-block;
+    padding:20px 100px;
+    width:84vw;
+    border-bottom: solid 1px #9b9b9b;
+    top:0;
+    background-color: white;
+}
+.crvene_reci{
+    display:inline-block;
+    vertical-align: top;
+    margin:17px 0 0 3.1vw;
+    font-weight: 600;
+}
+.header3{
+    width:auto;
+    height:47px;
+    background-color:#16161A;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.header3 .beli_tekst{
+    color:white;
+    position:relative;
+    right:5px;
+}
+.ShopNow{
+    color:#cebd9c;
+    font-weight: 500;
+    text-decoration-line:underline;
+    text-underline-position:under;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    letter-spacing:0;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.ShopNow:hover{
+    letter-spacing: 1.3px;
+}
+.velika_slika{
+    background-image: url("covek.jpg");
+    width:100%;
+    height:100vh;
+    background-position-y: top;
+    background-size: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: promena_pozadine;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.sadrzaj_slike{
+    width:84%;
+    height:50vh;
+    display:flex;
+    animation-name: promena_strane;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.tekst_slike{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fashion_sale{
+    color: #ff2020;
+    font-family: 'Send Flowers',cursive;
+    font-size: 43px;
+    font-weight: 400;
+}
+.tekst_slike h1{
+    font-size: 55px;
+    font-weight:900;
+    color:#292621;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    padding: 0 50px;
+    color: #74706b;
+    margin-bottom: 31px;
+}
+.tekst_slike .dugme{
+    width:175px;
+    height:48px;
+    background-color:#292621;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: medium;
+}
+@keyframes promena_pozadine{
+    0%{background-image: url("covek.jpg");}
+    44%{background-image: url("covek.jpg");}
+    50%{background-image: url("zena.jpg");}
+    94%{background-image: url("zena.jpg");}
+    100%{background-image: url("covek.jpg");}
+}
+@keyframes promena_strane{
+    0%{flex-direction: row;}
+    43%{flex-direction:row;}
+    48%{flex-direction:row-reverse;}
+    93%{flex-direction: row-reverse;}
+    98%{flex-direction: row;}
+}
