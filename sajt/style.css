@@ -11,9 +11,10 @@ body{
 }
 
 .header1{
-    padding:11px 100px;
-    border-bottom: 1px solid #edeff2;
+    padding:9px 100px;
+    border-bottom: 0.5px solid #edeff2;
     color: #292621;
+    background-color: white;
 }
 .header1 .dugme{
     display:inline-block;
@@ -22,7 +23,7 @@ body{
     cursor: pointer;
 }
 .header1 .desno{
-    padding-right: 35px;
+    padding-right: 15px;
     display:inline-block;
 }
 .fa-brands{
@@ -49,18 +50,136 @@ body{
     border-right:1px solid #edeff2;
 }
 .header2{
-    display:inline-block;
-    padding:20px 100px;
-    width:84vw;
-    border-bottom: solid 1px #9b9b9b;
+    width:100%;
+    height:90px;
     top:0;
     background-color: white;
+    position:sticky;
+    box-shadow: 0 10px 20px rgba(41,38,33,0.2);
+    z-index: 5;
+    display:flex;
+    align-items: center;
+}
+.header2 .container{
+    display:flex;
+    align-items: center;
+    margin:0 100px;
+    width:100%;
+    justify-content: space-between;
+}
+.CapitalShop{
+    padding-left:15px;
+    display:inline-block;
+    cursor: pointer;
 }
 .crvene_reci{
     display:inline-block;
-    vertical-align: top;
-    margin:17px 0 0 3.1vw;
+    padding:22px;
     font-weight: 600;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    position:relative;
+}
+.crvene_reci:hover{
+    color:#FF2020;
+}
+.sredina{
+    position:relative;
+}
+.new{
+    position:absolute;
+    font-size:10px;
+    top:6px;
+    right:294px;
+    width:28px;
+    height:17px;
+    background-color: #FF2020;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    border-radius: 4px;
+}
+.cosak{
+    position:absolute;
+    width:7px;
+    height:10px;
+    transform: rotate(50deg);
+    top:10px;
+    left:8px;
+    background-color: #FF2020;
+    z-index: -5;
+}
+.strelica{
+    font-size: 10px;
+}
+.crvene_reci:hover .strelica{
+    color:initial;
+}
+.lista{
+    position:absolute;
+    border-top: 3px solid #FF2020;
+    border-radius: 7px 7px 3px 3px;
+    background-color: white;
+    width:170px;
+    display:flex;
+    flex-direction: column;
+    padding: 17px 7px;
+    top:73px;
+    left:0px;
+    box-shadow: 0 0 10px 3px rgba(41,38,33,0.1);
+    visibility:hidden;
+    transition-duration: 0.3s;
+}
+.crvene_reci:hover .lista{
+    top:78px;
+    visibility: visible;
+    color:initial;
+}
+.crvene_reci_liste{
+    padding: 6px 10px;
+}
+.crvene_reci_liste:hover{
+    color:#FF2020;
+}
+.lista .cosak{
+    top:0px;
+    width:27px;
+    transform: rotate(45deg);
+    left:20px;
+}
+.tri_ikonice{
+    display:flex;
+    width:180px;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-evenly;
+}
+.tri{
+    padding:10px;
+    cursor: pointer;
+    font-weight:lighter;
+}
+.tri:hover{
+    color:#FF2020;
+}
+.kruzic{
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    background-color: #FF2020;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    position:absolute;
+    top:0;
+    right:0;
+    transition-duration: 1s;
+}
+.tri:hover .kruzic{
+    top:-4px;
 }
 .header3{
     width:auto;
@@ -96,7 +215,7 @@ body{
     background-position-y: top;
     background-size: 100%;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     animation-name: promena_pozadine;
     animation-iteration-count: infinite;
@@ -127,13 +246,20 @@ body{
     font-size: 55px;
     font-weight:900;
     color:#292621;
+    animation-name: bouncing;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
 }
-p{
+.tekst_slike p{
     text-align: center;
     font-size: 18px;
     padding: 0 50px;
     color: #74706b;
     margin-bottom: 31px;
+    position:relative;
+    animation-name:pojavljivanje;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
 }
 .tekst_slike .dugme{
     width:175px;
@@ -145,16 +271,19 @@ p{
     justify-content: center;
     font-size: 14px;
     font-weight: 500;
-    outline-color: initial;
-    outline-style: none;
-    outline-width: medium;
+    position:relative;
+    animation-name:pojavljivanje1;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    cursor: pointer;
+    border:solid 1px #292621;
 }
 @keyframes promena_pozadine{
     0%{background-image: url("covek.jpg");}
     44%{background-image: url("covek.jpg");}
-    50%{background-image: url("zena.jpg");}
+    48%{background-image: url("zena.jpg");}
     94%{background-image: url("zena.jpg");}
-    100%{background-image: url("covek.jpg");}
+    98%{background-image: url("covek.jpg");}
 }
 @keyframes promena_strane{
     0%{flex-direction: row;}
@@ -162,4 +291,103 @@ p{
     48%{flex-direction:row-reverse;}
     93%{flex-direction: row-reverse;}
     98%{flex-direction: row;}
+}
+@keyframes bouncing{
+    0% { transform: scale(0.9); color:#292621}
+    2% { transform: scale(1.1); }
+    4% {transform: scale(0.95);}
+    6% {transform: scale(1.05)}
+    8% {transform: scale(1.0)}
+    44%{transform: scale(1.0);color:#292621}
+    45%{color:transparent;}
+    48% { transform:scale(0.9); color:transparent;}
+    50% { transform: scale(1.1); color:#292621}
+    52% { transform: scale(0.95);}
+    54% {transform: scale(1.05)}
+    56% {transform: scale(1.0); color:#292621}
+    93%{color:#292621}
+    94%{color:transparent}
+    96%{transform:scale(1.0); color:transparent;}
+    100%{transform:scale(0.9); color:transparent;}
+}
+@keyframes pojavljivanje{
+    0%{top:80px; color:transparent;}
+    5%{top:80px; color:transparent;}
+    15%{top:0; color:#74706b;}
+    43%{top:0; color:#74706b;}
+    45%{top:0; color:transparent;}
+    48%{top:80px; color:transparent;}
+    53%{top:80px; color:transparent;}
+    63%{top:0; color:#74706b;}
+    94%{top:0; color:#74706b;}
+    95%{top:0; color:transparent;}
+    100%{top:80px; color:transparent;}
+}
+@keyframes pojavljivanje1{
+    0%{top:40px; color:transparent; background-color: transparent; border:transparent;}
+    10%{top:40px; color:transparent; background-color: transparent; border:transparent;}
+    20%{top:0; color:white; background-color: #292621; border:#292621}
+    43%{top:0; color:white; background-color: #292621; border:#292621}
+    45%{top:0; color:transparent; background-color: transparent;border:transparent;}
+    48%{top:40px; color:transparent; background-color: transparent;}
+    58%{top:40px; color:transparent; background-color: transparent; border:transparent}
+    68%{top:0; color:white; background-color: #292621; border:#292621}
+    94%{top:0; color:white; background-color: #292621; border:#292621}
+    95%{top:0; color:transparent; background-color: transparent; border:transparent;}
+    100%{top:40px; color:transparent; background-color: transparent;border:transparent;}
+}
+.tekst_slike .dugme:hover{
+    background-color: transparent;
+    color:#292621;
+}
+.dugme_sa_strane{
+    width:50px;
+    height:100px;
+    background-color: rgba(41,38,33,0.2);
+    transition: 0.5s;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.dugme_sa_strane:hover{
+    background-color: #292621;;
+}
+.prvi_red_slika{
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    margin-top: 30px;
+}
+.tri_slike{
+    width:356px;
+    height:310px;
+    background-color: aqua;
+    background-size: 100%;
+    background-position: center;
+    transition:0.5s;
+    box-shadow: 0 -90px 90px rgba(41,38,33,0.8) inset;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.prrva{
+    background-image:url("prva_slika.webp");
+}
+.drruga{
+    background-image:url("druga_slika.webp");
+}
+.trreca{
+    background-image: url("treca_slika.webp");
+}
+.tri_slike:hover{
+    background-size: 103%;
+}
+.tri_slike span{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
 }
