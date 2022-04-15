@@ -144,6 +144,8 @@ body{
 }
 .crvene_reci_liste:hover{
     color:#FF2020;
+    letter-spacing: 0.9px;
+    transition-duration: 0.3s;
 }
 .lista .cosak{
     top:-8px;
@@ -428,6 +430,25 @@ body{
     float:right;
     margin-right: 30px;
     z-index: 50;
+    color:white;
+    font-size:28px;
+    -webkit-text-stroke: 1.5px #FF2020;
+}
+.krov{
+    position:absolute;
+    left:9px;
+    top:10px;
+    animation:penjanje 4s infinite;
+    animation-delay:-1.5s;
+    cursor: pointer;
+}
+.krov2{
+    animation-delay:0s;
+}
+@keyframes penjanje{
+    0%{color:transparent; transform: translateY(0)}
+    50%{color:white}
+    100%{color:transparent; transform: translateY(-15px);}
 }
 .trending_this_week{
     margin:100px 115px 40px;
@@ -513,16 +534,16 @@ body{
 }
 .ikonice_slike{
     width:195px;
-    background-color: white;
     height:50px;
     display:flex;
     position:absolute;
     bottom:15px;
     left:30px;
     visibility:hidden;
-    transition:0.2s;
+    transition:0.5s;
 }
 .ikonica_slike{
+    background-color: white;
     width:65px;
     height:50px;
     display:flex;
@@ -530,6 +551,7 @@ body{
     align-items: center;
     font-size: 24px;
     color:#2e2e2e;
+    transition:0.2s;
 }
 .ikonica_slike:hover{
     background-color: #FF2020;
@@ -669,4 +691,14 @@ body{
 .you_may_like h2{
     font-size: 30px;
     font-weight: 600;
+}
+.latest_news{
+    margin-top: 100px;
+    height:715px;
+    padding:80px 0 30px;
+    background-color: #f6f6f6;
+}
+.latest_news h1{
+    font-size: 30px;
+    text-align: center;
 }
