@@ -1,8 +1,8 @@
-brojRedova=Number(prompt("unesite broj redova"))
-jedinice="1";
+// brojRedova=Number(prompt("unesite broj redova"));
+brojRedova=5;
+a="";
 for(i=1;i<=brojRedova;i++)
 {
-    console.log(jedinice.replaceAll("1",String(i)));
-    // console.log(jedinice*i);
-    jedinice+="1";
+    a+=String(i);
+    console.log(a);
 }
