@@ -1,0 +1,19 @@
+najveci_proizvod=0;
+for(i=100;i<1000;i++)
+{
+    for(j=100;j<=1000;j++)
+    {
+        proizvod=i*j;
+        obrnuti=String(proizvod).split('').reverse().join('');
+        if(String(proizvod)===obrnuti)
+        {
+            if(Number(proizvod)>najveci_proizvod)
+            {
+                najveci_proizvod=proizvod;
+                najveci_prvi_cinilac=i;
+                najveci_drugi_cinilac=j;
+            }
+        }
+    }
+}
+console.log(najveci_proizvod, najveci_prvi_cinilac, najveci_drugi_cinilac);
