@@ -1,0 +1,9 @@
+niz=[7,9,0,-2];
+n=6;
+rez=[];
+for(i=0;i<niz.length;i++)
+{
+    if(i>=niz.length-n)
+    rez.push(niz[i]);
+}
+console.log(rez);
